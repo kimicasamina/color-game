@@ -1,0 +1,78 @@
+* {
+  /* border: solid 1px red; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: center;
+  background: burlywood;
+  margin: 20px 0;
+}
+
+.dice-box {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.dice {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+.roll-btn {
+  padding: 10px 12px;
+  border: solid 1px #fff;
+  background: tomato;
+  color: #fff;
+  border-radius: 4px;
+}
+.form .input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form .bet-btn{
+  padding: 10px;
+  font-size: 16px;
+}
+.colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 40px 20px;
+}
+
+.color {
+  height: 200px;
+}
+
+.color:nth-child(1){
+  background: yellow;
+}
+
+.color:nth-child(2){
+  background: white;
+}
+
+.color:nth-child(3){
+  background: pink;
+}
+
+.color:nth-child(4){
+  background: blue;
+}
+
+.color:nth-child(5){
+  background: red;
+}
+
+.color:nth-child(6){
+  background: green;
+}
