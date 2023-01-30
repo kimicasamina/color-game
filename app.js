@@ -9,16 +9,6 @@ let statusStr = document.querySelector(".status");
 let playersMoney = 1000;
 let playersColor;
 let betAmount = 0;
-// listens for inputs on the form event
-// when the player submit a bet
-// decrease players money by the amount of bet
-// wait for color events
-// then take players color
-// then wait when the player roll the dice
-// generate dice colors
-// check if playersCOlors matches the dice color
-// if theres a match, increase the players money by the amount of their bet
-//
 
 form.addEventListener("submit", getBetAmount);
 
@@ -55,18 +45,10 @@ function getPlayersColor() {
 function checkIfPlayerWon() {
   dices.forEach((dice) => {
     if (dice.style.backgroundColor == playersColor) {
-      console.log("bet amount is ", betAmount);
-      console.log("players color: ", playersColor);
-      console.log("dice color: ", dice.style.backgroundColor);
       // if won, increment money
       playersMoney += betAmount * 2;
       playersMoneyStr.innerText = playersMoney;
-    } else {
-      // if lose, decrement money
-      console.log(playersColor, "Players lose!");
-      // playersMoney -= betAmount;
-      playersMoneyStr.innerText = playersMoney;
-    }
+    } 
   });
 }
 
